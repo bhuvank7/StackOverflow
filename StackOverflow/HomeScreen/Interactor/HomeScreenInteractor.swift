@@ -22,8 +22,7 @@ class HomeScreenInteractor: PresenterToInteractorHomeScreenProtocol {
                         items.isAnswered
                     }
                     self.presenter?.homeScreenDataFetchSuccess(homeScreenItems: homeScreenItems)
-                } catch let exception {
-                    print("exception.localizedDescription is \(exception.localizedDescription)")
+                } catch {
                     self.presenter?.homeScreenDataFetchFailed()
                 }
             } else {

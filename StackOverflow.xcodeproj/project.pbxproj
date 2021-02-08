@@ -13,6 +13,7 @@
 		71365E7225D1A12C0037C025 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71365E6E25D1A12C0037C025 /* Roboto-Medium.ttf */; };
 		71365E7325D1A12C0037C025 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71365E6F25D1A12C0037C025 /* Roboto-Bold.ttf */; };
 		71365E7425D1A12C0037C025 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71365E7025D1A12C0037C025 /* Roboto-Light.ttf */; };
+		71365E7A25D1A49C0037C025 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71365E7925D1A49C0037C025 /* Double+Extension.swift */; };
 		71F6377225D10A460026A373 /* HomeScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6377125D10A460026A373 /* HomeScreenProtocols.swift */; };
 		71F6377825D111550026A373 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6377725D111550026A373 /* AppConstants.swift */; };
 		71F6378025D113630026A373 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6377F25D113630026A373 /* Owner.swift */; };
@@ -61,6 +62,7 @@
 		71365E6E25D1A12C0037C025 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		71365E6F25D1A12C0037C025 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		71365E7025D1A12C0037C025 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		71365E7925D1A49C0037C025 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		71F6377125D10A460026A373 /* HomeScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenProtocols.swift; sourceTree = "<group>"; };
 		71F6377725D111550026A373 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		71F6377F25D113630026A373 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		71365E7825D1A47B0037C025 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71365E7925D1A49C0037C025 /* Double+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		71F6377025D10A250026A373 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,15 @@
 				71F637A225D177C50026A373 /* QuestionsCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		71FD3C2425D1A635005961DC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				932BF77B25D0E2F900AAFBA4 /* Main.storyboard */,
+				932BF78025D0E2FB00AAFBA4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		759127E952082B5F41B1A7FD /* Pods */ = {
@@ -194,14 +213,14 @@
 		932BF77425D0E2F900AAFBA4 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				71FD3C2425D1A635005961DC /* Storyboards */,
+				71365E7825D1A47B0037C025 /* Extensions */,
 				71365E6C25D1A0FF0037C025 /* Fonts */,
 				71F6377625D111490026A373 /* AppConstants */,
 				932BF7A825D0E31B00AAFBA4 /* HomeScreen */,
 				932BF77525D0E2F900AAFBA4 /* AppDelegate.swift */,
 				932BF77725D0E2F900AAFBA4 /* SceneDelegate.swift */,
-				932BF77B25D0E2F900AAFBA4 /* Main.storyboard */,
 				932BF77E25D0E2FB00AAFBA4 /* Assets.xcassets */,
-				932BF78025D0E2FB00AAFBA4 /* LaunchScreen.storyboard */,
 				932BF78325D0E2FB00AAFBA4 /* Info.plist */,
 			);
 			path = StackOverflow;
@@ -542,6 +561,7 @@
 				932BF7C525D0EB6200AAFBA4 /* HomeScreenPresenter.swift in Sources */,
 				932BF77A25D0E2F900AAFBA4 /* HomeScreenViewController.swift in Sources */,
 				932BF7B825D0E94200AAFBA4 /* HomeScreenInteractor.swift in Sources */,
+				71365E7A25D1A49C0037C025 /* Double+Extension.swift in Sources */,
 				932BF77625D0E2F900AAFBA4 /* AppDelegate.swift in Sources */,
 				71F637A325D177C50026A373 /* QuestionsCell.swift in Sources */,
 				932BF77825D0E2F900AAFBA4 /* SceneDelegate.swift in Sources */,

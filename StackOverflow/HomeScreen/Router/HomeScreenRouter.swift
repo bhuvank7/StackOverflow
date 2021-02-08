@@ -9,6 +9,6 @@ import UIKit
 
 class HomeScreenRouter: PresenterToRouterHomeProtocol {
     static func createDetailsModule() -> UIViewController {
-        return UIViewController()
+        return UIViewController() // Once we have detail screen, we can replace here
     }
 }
