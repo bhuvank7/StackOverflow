@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1278477CC413A33BA1ED8872 /* Pods_StackOverflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD01160136FC7ACA61539F67 /* Pods_StackOverflow.framework */; };
 		2E7AE5DF3180E5238769B489 /* Pods_StackOverflowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2CD7782802CCC4B99FF0B3 /* Pods_StackOverflowTests.framework */; };
+		71F6377225D10A460026A373 /* HomeScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6377125D10A460026A373 /* HomeScreenProtocols.swift */; };
+		71F6377825D111550026A373 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6377725D111550026A373 /* AppConstants.swift */; };
+		71F6378025D113630026A373 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6377F25D113630026A373 /* Owner.swift */; };
+		71F6378525D15B250026A373 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F6378425D15B250026A373 /* Alamofire.framework */; };
 		932BF77625D0E2F900AAFBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BF77525D0E2F900AAFBA4 /* AppDelegate.swift */; };
 		932BF77825D0E2F900AAFBA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BF77725D0E2F900AAFBA4 /* SceneDelegate.swift */; };
 		932BF77A25D0E2F900AAFBA4 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BF77925D0E2F900AAFBA4 /* HomeScreenViewController.swift */; };
@@ -47,6 +51,10 @@
 		3A2CD7782802CCC4B99FF0B3 /* Pods_StackOverflowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5299998D22FAB7699577A208 /* Pods-StackOverflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflow.release.xcconfig"; path = "Target Support Files/Pods-StackOverflow/Pods-StackOverflow.release.xcconfig"; sourceTree = "<group>"; };
 		55190CCDD8FB3B2BE78EDCF2 /* Pods_StackOverflow_StackOverflowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflow_StackOverflowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F6377125D10A460026A373 /* HomeScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenProtocols.swift; sourceTree = "<group>"; };
+		71F6377725D111550026A373 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		71F6377F25D113630026A373 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		71F6378425D15B250026A373 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED356518B11519C0FDEA0F1 /* Pods-StackOverflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflow.debug.xcconfig"; path = "Target Support Files/Pods-StackOverflow/Pods-StackOverflow.debug.xcconfig"; sourceTree = "<group>"; };
 		932BF77225D0E2F900AAFBA4 /* StackOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932BF77525D0E2F900AAFBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F6378525D15B250026A373 /* Alamofire.framework in Frameworks */,
 				1278477CC413A33BA1ED8872 /* Pods_StackOverflow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +108,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71F6377025D10A250026A373 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				71F6377125D10A460026A373 /* HomeScreenProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		71F6377625D111490026A373 /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				71F6377725D111550026A373 /* AppConstants.swift */,
+			);
+			path = AppConstants;
+			sourceTree = "<group>";
+		};
 		759127E952082B5F41B1A7FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +162,7 @@
 		932BF77425D0E2F900AAFBA4 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				71F6377625D111490026A373 /* AppConstants */,
 				932BF7A825D0E31B00AAFBA4 /* HomeScreen */,
 				932BF77525D0E2F900AAFBA4 /* AppDelegate.swift */,
 				932BF77725D0E2F900AAFBA4 /* SceneDelegate.swift */,
@@ -169,6 +195,7 @@
 		932BF7A825D0E31B00AAFBA4 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				71F6377025D10A250026A373 /* Protocols */,
 				932BF7B325D0E4D000AAFBA4 /* Router */,
 				932BF7B225D0E4C500AAFBA4 /* Presenter */,
 				932BF7B125D0E4BE00AAFBA4 /* Entity */,
@@ -198,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				932BF7BC25D0EAB000AAFBA4 /* HomeScreenModel.swift */,
+				71F6377F25D113630026A373 /* Owner.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -221,6 +249,7 @@
 		B24D1E848F8591303506ADE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71F6378425D15B250026A373 /* Alamofire.framework */,
 				AD01160136FC7ACA61539F67 /* Pods_StackOverflow.framework */,
 				55190CCDD8FB3B2BE78EDCF2 /* Pods_StackOverflow_StackOverflowUITests.framework */,
 				3A2CD7782802CCC4B99FF0B3 /* Pods_StackOverflowTests.framework */,
@@ -467,7 +496,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				932BF7CA25D0EB7000AAFBA4 /* HomeScreenRouter.swift in Sources */,
+				71F6377825D111550026A373 /* AppConstants.swift in Sources */,
 				932BF7BD25D0EAB000AAFBA4 /* HomeScreenModel.swift in Sources */,
+				71F6378025D113630026A373 /* Owner.swift in Sources */,
+				71F6377225D10A460026A373 /* HomeScreenProtocols.swift in Sources */,
 				932BF7C525D0EB6200AAFBA4 /* HomeScreenPresenter.swift in Sources */,
 				932BF77A25D0E2F900AAFBA4 /* HomeScreenViewController.swift in Sources */,
 				932BF7B825D0E94200AAFBA4 /* HomeScreenInteractor.swift in Sources */,
@@ -578,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -633,7 +665,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
