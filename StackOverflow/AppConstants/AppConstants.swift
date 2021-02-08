@@ -8,7 +8,7 @@
 import Foundation
 
 struct NetworkCalls {
-    static let FETCH_HOME_SCREEN_DATA = "https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&site=stackoverflow"
+    static let FETCH_HOME_SCREEN_DATA = "https://api.stackexchange.com/2.2/questions?order=desc&sort=month&site=stackoverflow"
 }
 
 struct Constants {
@@ -16,4 +16,8 @@ struct Constants {
     static let FETCH_HOME_SCREEN_ERROR = "Unable to fetch home screen data"
     static let ALERT = "Alert"
     static let OK_BUTTON = "Ok"
+}
+
+struct CellIdentifiers {
+    static let QUESTIONS_CELL_IDENTIFIER = "QuestionsCell"
 }

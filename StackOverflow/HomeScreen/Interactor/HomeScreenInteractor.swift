@@ -19,10 +19,11 @@ class HomeScreenInteractor: PresenterToInteractorHomeScreenProtocol {
                 do {
                     let responseModel = try jsonDecoder.decode(HomeScreenModel.self, from: data)
                     let homeScreenItems = responseModel.items.filter { (items) -> Bool in
-                        items.is_answered
+                        items.isAnswered
                     }
                     self.presenter?.homeScreenDataFetchSuccess(homeScreenItems: homeScreenItems)
-                } catch {
+                } catch let exception {
+                    print("exception.localizedDescription is \(exception.localizedDescription)")
                     self.presenter?.homeScreenDataFetchFailed()
                 }
             } else {

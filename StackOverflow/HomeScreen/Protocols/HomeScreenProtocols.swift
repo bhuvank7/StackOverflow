@@ -20,17 +20,22 @@ protocol PresenterToViewHomeProtcol: class {
     func onHomeScreenResponseFailed(error: String)
 }
 
-protocol PresenterToRouterHomeProtocol:class {
+protocol PresenterToRouterHomeProtocol: class {
     static func createDetailsModule()-> UIViewController
 }
 
 
-protocol PresenterToInteractorHomeScreenProtocol:class {
+protocol PresenterToInteractorHomeScreenProtocol: class {
     var presenter: InteractorToPresenterHomeScreenProtocol? {get set}
     func fetchHomeScreenData()
 }
 
-protocol InteractorToPresenterHomeScreenProtocol:class {
+protocol InteractorToPresenterHomeScreenProtocol: class {
     func homeScreenDataFetchSuccess(homeScreenItems: [StackOverflowItems])
     func homeScreenDataFetchFailed()
+}
+
+protocol presentToRouterProtocol: class {
+    static func createHomeScreenVC()-> HomeScreenViewController
+    func pushToHomeScreen(navigationConroller: UINavigationController)
 }
