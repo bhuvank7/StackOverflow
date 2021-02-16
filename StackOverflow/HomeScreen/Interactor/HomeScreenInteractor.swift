@@ -19,7 +19,7 @@ class HomeScreenInteractor: PresenterToInteractorHomeScreenProtocol {
                 do {
                     let responseModel = try jsonDecoder.decode(HomeScreenModel.self, from: data)
                     let homeScreenItems = responseModel.items.filter { (items) -> Bool in
-                        items.isAnswered
+                        items.isAnswered && items.answersCount > 1 && items.accepectedAnswerID != nil
                     }
                     self.presenter?.homeScreenDataFetchSuccess(homeScreenItems: homeScreenItems)
                 } catch {

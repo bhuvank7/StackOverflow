@@ -29,6 +29,7 @@ struct StackOverflowItems: Codable {
     let link: String
     let title: String
     let creationDate: Double
+    let accepectedAnswerID: Int?
     
     enum CodingKeys: String, CodingKey {
         case owner
@@ -39,6 +40,7 @@ struct StackOverflowItems: Codable {
         case title
         case score
         case creationDate = "creation_date"
+        case accepectedAnswerID = "accepted_answer_id"
     }
     
     init(from decoder: Decoder) throws {
@@ -51,5 +53,6 @@ struct StackOverflowItems: Codable {
         link = try values.decode(String.self, forKey: .link)
         title = try values.decode(String.self, forKey: .title)
         creationDate = try values.decode(Double.self, forKey: .creationDate)
+        accepectedAnswerID = try values.decodeIfPresent(Int.self, forKey: .accepectedAnswerID)
     }
 }
